@@ -1,6 +1,6 @@
 # Tiny CoreNLP Docker
 
-A minimal Docker image for running [Stanford CoreNLP Server](https://stanfordnlp.github.io/CoreNLP/corenlp-server.html). The Dockerfile was based on a peek at some of the CoreNLP server Docker images listed [here](https://stanfordnlp.github.io/CoreNLP/other-languages.html#docker) and especially [CoreNLP Complete Dockerfile](https://github.com/grahamimac/corenlp-complete-docker) and [NLPBox's stanford-corenlp-docker](https://github.com/NLPbox/stanford-corenlp-docker). The NLPBox docker gets you the latest CoreNLP version, which would be better for most purposes. The image that this Dockerfile creates is less than half as large.
+A minimal Docker image for running [Stanford CoreNLP Server](https://stanfordnlp.github.io/CoreNLP/corenlp-server.html). The Dockerfile was based on a peek at some of the CoreNLP server Docker images listed [here](https://stanfordnlp.github.io/CoreNLP/other-languages.html#docker) and especially [CoreNLP Complete Dockerfile](https://github.com/grahamimac/corenlp-complete-docker) and [NLPBox's stanford-corenlp-docker](https://github.com/NLPbox/stanford-corenlp-docker). The NLPBox docker gets you the latest CoreNLP version, which would be better for most purposes. However, the image that this Dockerfile creates is more compact than these other options and allows you to specify the CoreNLP server RAM usage and threads at runtime.
 
 ## Build the Dockerfile
 
