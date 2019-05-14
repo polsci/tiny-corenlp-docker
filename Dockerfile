@@ -19,4 +19,6 @@ ENV JAVA_XMX 4g
 
 ENV CORENLP_THREADS 4
 
-CMD java -Xmx$JAVA_XMX -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000 -threads $CORENLP_THREADS
+ENV CORENLP_TIMEOUT 15000
+
+CMD java -Xmx$JAVA_XMX -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout $CORENLP_TIMEOUT -threads $CORENLP_THREADS
