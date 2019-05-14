@@ -13,11 +13,11 @@ A minimal Docker image for running [Stanford CoreNLP Server](https://stanfordnlp
 Note: add -itd if you want it to run in the background.
 Remember: --rm tidies up afterwards.
 
-## More memory, more threads?
+## More memory, more threads, more time?
 
-By default the server will start with up to 4GB RAM usage and 4 threads. To change these values (in this case to 8 threads and 8GB RAM)...
+By default the server will start with up to 4GB RAM usage, 4 threads, and timeout of 15000. To change these values (in this case to 8GB RAM, 8 threads, 30000 timeout)...
 
-`docker run -e CORENLP_THREADS=8 -e JAVA_XMX=8g --rm -p 9000:9000 tiny-corenlp`
+`docker run -e JAVA_XMX=8g -e CORENLP_THREADS=8 -e CORENLP_TIMEOUT=30000 --rm -p 9000:9000 tiny-corenlp`
 
 ## Testing
 
